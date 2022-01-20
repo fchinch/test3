@@ -1,0 +1,30 @@
+{
+  "name": "dynamodb",
+  "version": "1.0.0",
+  "description": "hidynamodb",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "create-db": "cd dynamodb && node createUser-Notes.js && cd .. ",
+    "create-db-token": "cd dynamodb && node createToken-Email-Lookup.js && cd .. ",
+    "delete-db": "cd dynamodb && node deleteUser-Notes.js && cd ..",
+    "delete-db-token": "cd dynamodb && node deleteToken-Email-Lookup.js && cd ..",
+    "load-data": "cd dynamodb && node loadUser-Notes.js && cd ..",
+    "read-data": "cd dynamodb && node readUser-Notes.js && cd ..",
+    "load-data-token": "cd dynamodb && node loadToken-Email-Lookup.js && cd ..",
+    "read-data-token": "cd dynamodb && node readToken-Email-Lookup.js && cd ..",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1060.0",
+    "cors": "^2.8.5",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "newman": "^5.3.1",
+    "node-uuid": "^1.4.8",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  }
+}
