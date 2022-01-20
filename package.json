@@ -9,10 +9,8 @@
     "create-db-token": "cd dynamodb && node createToken-Email-Lookup.js && cd .. ",
     "delete-db": "cd dynamodb && node deleteUser-Notes.js && cd ..",
     "delete-db-token": "cd dynamodb && node deleteToken-Email-Lookup.js && cd ..",
-    "load-data": "cd dynamodb && node loadUser-Notes.js && cd ..",
-    "read-data": "cd dynamodb && node readUser-Notes.js && cd ..",
-    "load-data-token": "cd dynamodb && node loadToken-Email-Lookup.js && cd ..",
-    "read-data-token": "cd dynamodb && node readToken-Email-Lookup.js && cd ..",
+    "load-data": "cd dynamodb && node loadUser-Notes.js && cd ..",    
+    "load-data-token": "cd dynamodb && node loadToken-Email-Lookup.js && cd ..",    
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
