@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
 app.get('/usernotes', async function (req, res) {
     let user = await authenticateUser(req).then(queryUserNotes)
     .then(notes => {
-           return res.status(200).json(notes);
+           return res.status(200).set('Access-Control-Allow-Origin', '*').json(notes);
      })
     .catch((err) => {
         let e = err.split('-');
